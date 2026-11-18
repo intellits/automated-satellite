@@ -1,24 +1,20 @@
 ---
 collections:
-- name: fedora.linux_system_roles
-  version: ">=1.21.0" # Version range identifiers (default: ``*``)
-  source: https://galaxy.ansible.com # The Galaxy URL to pull the collection from (default: ``--api-server`` from cmdline)
-- name: community.general
-  version: "11.4.0" # Version range identifiers (default: ``*``)
-  source: https://galaxy.ansible.com # The Galaxy URL to pull the collection from (default: ``--api-server`` from cmdline)
-#- name: infra.leapp
-#  version: "1.1.3" # Version range identifiers (default: ``*``)
-#  source: https://galaxy.ansible.com # The Galaxy URL to pull the collection from (default: ``--api-server`` from cmdline)
-- name: https://github.com/heatmiser/ansible-leapp.git
-  type: git
-  version: 2024-01-07.01
-- name: infra.lvm_snapshots
-  version: "2.1.0" # Version range identifiers (default: ``*``)
-  source: https://galaxy.ansible.com # The Galaxy URL to pull the collection from (default: ``--api-server`` from cmdline)
-#- name: https://github.com/oamg/infra.convert2rhel.git
-#  type: git
-#  version: main
-- name: https://github.com/heatmiser/infra.convert2rhel.git
-  type: git
-  version: dev-2024-09-09.01
-...
+  - name: redhat.satellite
+    source: https://galaxy.ansible.com
+  - name: redhat.satellite_operations
+    source: https://galaxy.ansible.com
+  - name: infra.leapp
+    version: ">=1.5.0"
+    source: https://galaxy.ansible.com
+  - name: infra.lvm_snapshots
+    version: ">=2.1.0"
+    source: https://galaxy.ansible.com
+  - name: fedora.linux_system_roles
+    version: ">=1.21.0"
+    source: https://galaxy.ansible.com
+  - name: community.general
+    version: ">=9.0.0"
+    source: https://galaxy.ansible.com
+  - name: ansible.posix
+    source: https://galaxy.ansible.com
